@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Epilogue-Medium"),
+    url('./font/Epilogue-Medium.woff2') format('woff2'),
+    url('./font/Epilogue-Medium.woff2') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Epilogue-Bold"),
+    url('./font/Epilogue-Bold.woff2') format('woff2'),
+    url('./font/Epilogue-Bold.woff2') format('woff');
+    font-display: swap;
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+}
