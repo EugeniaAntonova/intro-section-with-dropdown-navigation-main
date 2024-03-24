@@ -9,7 +9,6 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { position: fixed; bottom: 8px; left: 0; right: 0; margin: 0 auto; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,25 +17,53 @@
 <body>
   <header class="header">
     <a href="/" class="logo-link"><img src="/images/logo.svg" alt="snap" title="back to main"></a>
-    <nav class="header-nav">
-      
-    </nav>
+    <button type="button" class="burger"></button>
+    <div class="nav-wrapper">   
+      <nav class="header-nav">
+        <button type="button" class="burger"></button>   
+        <ul class="list js-nav-list">
+          <li class="list-item" data-opens="true"><span>Features</span>
+            <menu class="sublist sublist--decorated">
+              <li><a href="#" class="todo">Todo list</a></li>
+              <li><a href="#" class="calendar">Calendar</a></li>
+              <li><a href="#" class="reminder">Reminder</a></li>
+              <li><a href="#" class="planning">Planning</a></li>
+            </menu>
+          </li>
+          <li class="list-item" data-opens="true"><span>Company</span>
+            <menu class="sublist">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Blog</a></li>
+            </menu>
+          </li>
+          <li class="list-item"><a href="#">Careers</a></li>
+          <li class="list-item"><a href="#">About</a></li>
+        </ul>
+        <div class="actions">
+          <button type="button">Login</button>
+          <button type="button">Register</button>
+        </div>
+      </nav>
+    </div>
   </header>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <main>
+    <h1 class="visually-hidden">Service to effectively organize remote work for your team</h1>
+    <section class="hero">
+      <div class="decor">
+        <picture>
+          <source media="(min-width: 850px)" srcset="/images/image-hero-desktop.png">
+          <img src="/images/image-hero-mobile.png" aria-hidden="true">
+        </picture>
+      </div>
+      <div class="content">
+        <h2>Make remote work</h2>
+        <p> Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+      </div>
+      <a href="">Learn more</a>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
