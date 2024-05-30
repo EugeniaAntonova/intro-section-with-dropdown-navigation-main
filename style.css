@@ -200,7 +200,7 @@ img {
     width: 10px;
     height: 1ch;
     margin-left: 1ch;
-    background: url('/images/icon-arrow-down.svg') no-repeat center;
+    background: url('./images/icon-arrow-down.svg') no-repeat center;
     transition: transform .3s ease-in-out;
     transform-style: preserve-3d;
 }
@@ -227,19 +227,19 @@ img {
 }
 
 #features-list li:nth-of-type(1) a::before {
-    background-image: url('/images/icon-todo.svg');
+    background-image: url('./images/icon-todo.svg');
 }
 
 #features-list li:nth-of-type(2) a::before {
-    background-image: url('/images/icon-calendar.svg');
+    background-image: url('./images/icon-calendar.svg');
 }
 
 #features-list li:nth-of-type(3) a::before {
-    background-image: url('/images/icon-reminders.svg');
+    background-image: url('./images/icon-reminders.svg');
 }
 
 #features-list li:nth-of-type(4) a::before {
-    background-image: url('/images/icon-planning.svg');
+    background-image: url('./images/icon-planning.svg');
 }
 
 [aria-expanded]+ul {
