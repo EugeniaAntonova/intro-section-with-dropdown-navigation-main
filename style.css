@@ -38,6 +38,11 @@ body {
     margin: 0;
     background-color: var(--white);
     overflow-x: hidden;
+    scrollbar-gutter: stable;
+}
+
+.no-overflow {
+    overflow: hidden;
 }
 
 .main {
